@@ -1,6 +1,6 @@
 import React from 'react'
 import { Metadata } from 'next'
-import {Jost} from 'next/font/google'
+import { Jost } from 'next/font/google'
 
 import { AdminBar } from './_components/AdminBar'
 import { Footer } from './_components/Footer'
@@ -11,9 +11,9 @@ import { mergeOpenGraph } from './_utilities/mergeOpenGraph'
 
 import './_css/app.scss'
 
-const jost = Jost ({
+const jost = Jost({
   subsets: ['latin'],
-  weight: ['400','700'],
+  weight: ['400', '700'],
   variable: '--font-jost',
 })
 
@@ -30,7 +30,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
           <AdminBar />
           {/* @ts-expect-error */}
           <Header />
-          <main className='main'> {children} </main>
+          <main className="main">{children}</main>
           {/* @ts-expect-error */}
           <Footer />
         </Providers>

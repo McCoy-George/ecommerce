@@ -30,10 +30,11 @@ export const RemoveFromCartButton: React.FC<{
     >
       <Image
         src="/assets/icons/delete.svg"
-        alt='delete'
+        alt="delete"
         width={24}
         height={24}
         className={classes.qtnBt}/>
+        
     </button>
   )
 }
